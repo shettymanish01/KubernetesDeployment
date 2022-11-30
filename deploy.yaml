@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: washbin-site
+  labels:
+    app: washbinsite
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: washbinsite
+  template:
+    metadata:
+      labels:
+        app: washbinsite
+    spec:
+      containers:
+      - name: washbin
+        image: shettymanish01/testsite:v1
+        ports:
+        - containerPort: 5000

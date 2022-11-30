@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: washbin
+spec:
+  containers:
+  - name: washbin
+    image: shettymanish01/testsite:v1
+    ports:
+    - containerPort: 5000
