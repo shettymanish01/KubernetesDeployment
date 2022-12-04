@@ -17,6 +17,6 @@ spec:
       containers:
       - name: washbin
         imagePullPolicy: Always
-        image: shettymanish01/testsite:31
+        image: shettymanish01/testsite:32
         ports:
         - containerPort: 5000
