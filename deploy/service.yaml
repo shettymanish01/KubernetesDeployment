@@ -3,12 +3,12 @@ kind: Service
 metadata:
   name: washbin-service
 spec:
-  type: NodePort
+  type: LoadBalancer
   selector:
     app: washbinsite
   ports:
     - protocol: TCP
       port: 90
       targetPort: 5000
-      nodePort: 31000
+      
       
